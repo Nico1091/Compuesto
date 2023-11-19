@@ -65,13 +65,7 @@ public class Operaciones_Matematicas {
         } 
    }
     public void Preorden(String expresion,Stack pila,Nodo igual,Nodo siguiente,Nodo anterior,Nodo actual){
-        while(actual!=null||pila.isEmpty()){
-            pila.add(actual);
-                actual=actual.ant;
-                actual=(Nodo) pila.pop();
-                System.out.println(actual.dato+" ");
-                actual=actual.sig;
-        }
+   preorden(expresion);
     }
      public void Posorden(String expresion,Stack pila,Nodo igual,Nodo siguiente,Nodo anterior,Nodo actual){
         while(actual!=null||pila.isEmpty()){
